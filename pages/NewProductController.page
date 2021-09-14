@@ -1,4 +1,5 @@
-<apex:page standardController="Unit__c" recordSetVar="units">
+<apex:page standardController="Unit__c" recordSetVar="units" standardStylesheets="false">
+<apex:stylesheet value="{!$Resource.customStyleSheet}" />
     <apex:form >
     <apex:pageBlock title="Units List" id="units_list">
         Filter Product By:
