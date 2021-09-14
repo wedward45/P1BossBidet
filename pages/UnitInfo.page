@@ -1,0 +1,7 @@
+<apex:page controller="UnitExtension" id="thePage">
+    <apex:repeat value="{!Percentages}" var="Per" id="theRepeat">
+        <apex:outputText value="{!Per.Name}" id="Name"/><br/>
+        <apex:outputText value="{!Per.Quantity}" id="Quantity"/><br/>
+        <apex:outputText value="{!Per.Percentage}" id="Percentage"/><br/>
+    </apex:repeat>
+</apex:page>
