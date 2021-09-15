@@ -1,6 +1,7 @@
 <apex:page standardController="Unit__c" recordSetVar="units" standardStylesheets="false">
 <apex:stylesheet value="{!$Resource.customStyleSheet}" />
     <apex:form >
+    <div class="form">
     <apex:pageBlock title="Units List" id="units_list">
         Filter Product By:
 		<apex:selectList value="{! filterId }" size="1">
@@ -41,4 +42,5 @@
     <apex:pageBlock title="Create an account to be alerted whenever a new unit is announced!">
 		<apex:include pageName="EmailSubscription"/>
     </apex:pageBlock>
+    </div>
 </apex:page>
